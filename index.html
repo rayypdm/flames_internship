@@ -1,10 +1,75 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="flstyle.css"/>
+        <script src="flscript.js"></script>
     </head>
 
     <body>
-        
+        <div class="column1">
+            <div class="title">
+                <h1>Age and Zodiac Sign Calculator</h1>
+            </div>
+
+            <div class="alert">
+                <h3 id="alertArea"></h3>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="box">
+                        <h4>Enter Name</h4>
+                    </div>
+
+                    <div class="box">
+                        <input id="nameInput" 
+                        name="nameInput"
+                        type="text"
+                        placeholder="e.g. Ray">
+                    </div>
+
+                    <div class="box">
+                        <h4>Enter Date of Birth</h4>
+                    </div>
+
+                    <div class="box">
+                        <input id="dateInput" 
+                        type="text" 
+                        name="dateInput"
+                        placeholder="MM-DD-YYYY" 
+                        onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                    </div>
+
+                    <div class="boxb">
+                        <button onclick="checkInputs();">Submit</button>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="box">
+                        <h4>Name: <span id="nameArea"></span></h4>
+                    </div>
+                        
+                     <div class="box">
+                        <h4>Birthdate: <span id="dateArea"></span></h4>
+                    </div>
+
+                    <div class="box">
+                        <h4>Age: <span id="ageArea"></span></h4>
+                    </div>
+
+                    <div class="box">
+                        <h4>Zodiac Sign: <span id="zodiacArea"></span></h4>
+                    </div>
+                </div>
+            </div>  
+        </div>
     </body>
+
+    <footer>
+        <div class="footer">
+            Made by Ray De Mesa (2025)
+        </div>
+    </footer>
 </html>
