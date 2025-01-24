@@ -86,4 +86,6 @@ function clearAlert() {
     document.getElementById('alertArea').textContent = "";
 }
 
-
+function reloadPage() {
+    location.reload();
+}
