@@ -3,10 +3,8 @@ function checkInputs() {
     const dateInput = document.getElementById('dateInput').value;
 
     if (!nameInput || !dateInput) {
-        // Show alert if either field is empty
         alertMessage();
     } else {
-        // Clear the alert and proceed if both fields are filled
         clearAlert();
         displayName();
         displayDate();
