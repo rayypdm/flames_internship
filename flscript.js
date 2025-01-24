@@ -42,7 +42,7 @@ function displayAge() {
     if (currentMonth < birthMonth || (currentMonth === birthMonth && currentDay < birthDay)) {
         age--;
     }
-    document.getElementById('ageArea').textContent = `${age} years old`;
+    document.getElementById('ageArea').textContent = `${age} year/s old`;
 }
 
 const zodiacSigns = [
